@@ -64,6 +64,21 @@ a{
     line-height: 1.26;
 }
 
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp,1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2{
+    --line-clamp:2;
+}
+
+.word-break-all{
+    word-break: break-all;
+}
+
 /* ----------------------------- Header ----------------------------- */
 
 .header{
@@ -356,6 +371,7 @@ a{
     font-size: 1.8rem;
     line-height: 1.67;
     color: #171100;
+    padding-right: 6px;
 }
 
 .popular .course-list .course-item .info .head .rating .value{

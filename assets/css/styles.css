@@ -46,6 +46,23 @@ a{
     opacity:0.9;
 }
 
+.heading{
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.heading.lv1{
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading.lv2{
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
 /* ----------------------------- Header ----------------------------- */
 
 .header{
@@ -107,7 +124,7 @@ a{
 /* ----------------------------- Hero ----------------------------- */
 
 .hero{
-    padding-top: 56px;
+    padding: 56px 0 65px;
     background: #FFFCF4;
 }
 
@@ -115,11 +132,11 @@ a{
     display: flex;
 }
 
-/* Media-block */
+/* ----------------------------- Media-block ----------------------------- */
 
 .hero .media-block{
     position: relative;
-    width: 48%;
+    width: 45%;
 }
 
 .hero .media-block .image{
@@ -127,6 +144,7 @@ a{
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
+    display: block;
 }
 
 .hero .hero-sumary{
@@ -134,7 +152,7 @@ a{
     right:0;
     bottom: 48px;
     width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
     background: #FFFFFF;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
@@ -142,6 +160,7 @@ a{
 
 .hero .hero-sumary .item{
     display: flex;
+    align-items: center;
 }
 
 .hero .hero-sumary .item + .item{
@@ -187,17 +206,8 @@ a{
 /* Content-block */
 
 .hero .content-block{
-    width: 52%;
+    width: 55%;
     padding: 64px 0 0 130px;
-}
-
-.hero .heading{
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #171100;
 }
 
 .hero .desc{
@@ -260,3 +270,46 @@ a{
     padding: 0 8px 0 28px;
 }
 
+/* ----------------------------- Popular ----------------------------- */
+
+.popular{
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular .popular-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .popular-top .desc{
+    margin-top: 16px;
+    width: 458px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+}
+
+.popular .controls{
+    display: flex;
+    gap: 18px;
+}
+
+.popular .popular-top .control-btn{
+    width: 40px;
+    height: 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: transparent;
+    color:var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.popular .popular-top .control-btn:hover{
+    background: var(--primary-color);
+    color:#FFF;
+    cursor: pointer;
+}

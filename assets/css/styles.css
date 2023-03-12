@@ -408,3 +408,71 @@ a{
     background: var(--primary-color);
     color:#FFF;
 }
+
+/* ----------------------------- Feedback ----------------------------- */
+
+.feedback{
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+.feedback .feedback-item{
+    display: flex;
+}
+
+.feedback .feedback-item .avatar{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .feedback-item .info .title{
+    font-family: var(--font-heading);
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #F7F7F7;
+}
+
+.feedback .feedback-item .info .desc{
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB3;
+}
+
+.feedback .feedback-item .info .dots{
+    display:flex;
+    margin-top: 28px;
+    gap:6px;
+}
+
+.dots .dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.dots .dot.active{
+    background: #FFB900;
+    cursor: default;
+}
+
+.feedback .feedback-content{
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback .feedback-content blockquote{
+    margin-left: 30px;
+    font-style: italic;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #FFFFFF;
+}
